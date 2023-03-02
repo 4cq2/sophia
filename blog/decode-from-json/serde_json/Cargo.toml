@@ -1,0 +1,8 @@
+[package]
+name = "decode-from-json"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+attohttpc = { version = "0.22.0", default-features = false }
+serde_json = { version = "1.0.85", default-features = false, features = ["std"] }

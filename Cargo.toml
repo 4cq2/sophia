@@ -1,0 +1,15 @@
+[package]
+description = "Download media or send API requests"
+documentation = "https://docs.rs/s8"
+edition = "2021"
+license = "OSL-3.0"
+name = "s8"
+repository = "https://2a.pages.dev/sophia"
+version = "0.1.2"
+
+[dependencies]
+attohttpc = { version = "0.22.0", default-features = false, features = ["tls"] }
+humphrey_json = { version = "0.2.1", default-features = false }
+
+[profile]
+release = { strip = "symbols", lto = "thin", opt-level = "z" }

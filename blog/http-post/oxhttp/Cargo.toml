@@ -1,0 +1,8 @@
+[package]
+name = "http-post"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+humphrey_json = { version = "0.2.1", default-features = false }
+oxhttp = { version = "0.1.5", features = ["native-tls"] }

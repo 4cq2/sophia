@@ -1,0 +1,7 @@
+[package]
+name = "http-get"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+attohttpc = { version = "0.22.0", default-features = false, features = ["tls"] }

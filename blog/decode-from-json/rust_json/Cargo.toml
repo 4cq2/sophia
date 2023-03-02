@@ -1,0 +1,11 @@
+[package]
+name = "decode-from-json"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+attohttpc = { version = "0.22.0", default-features = false }
+rust_json = "0.1.3"
+
+[profile]
+release = { strip = "symbols", lto = "thin", opt-level = "z" }
